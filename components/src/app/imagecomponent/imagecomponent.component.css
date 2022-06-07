@@ -1,0 +1,11 @@
+h3{
+    text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: 0%;
+    margin-right: auto;
+    width: 5%;
+    top: 0%;
+}
