@@ -5,3 +5,13 @@ div{
 label{
     text-align: left;
 }
+
+.alert-danger{
+    background-color: rgb(105, 2, 2);
+}
+
+.alert{
+    color: white;
+    margin-bottom: 15px;
+    text-align: left;
+}

@@ -1,9 +1,13 @@
 <div class="container">
     <h1>User registration</h1>
-    <form action="">
+    <form #login ="ngForm" (ngSubmit) = "submit(login)">
         <div class="form-group">
             <label for="firstname">Firstname</label><br>
-            <input type="text" name="firstname" class="form-control" ngModel>
+            <input #name = "ngModel" required minlength = "2" maxlength = "7" type="text" name="firstname" class="form-control" ngModel>
+            <div *ngIf = "name.touched && name.invalid" class="alert alert-danger">
+                <!-- <p *ngIf = "name.errors.required">Firstname Required!!</p> -->
+                <!-- <p *ngIf = "name.errors.minlength">Firstname too short!</p> -->
+            </div>
         </div>
         <pre></pre>
         <div class="form-group">
@@ -24,3 +28,4 @@
         <button class="btn btn-primary" type="submit">Submit</button>
     </form>
 </div>
+        
