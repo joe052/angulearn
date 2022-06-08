@@ -8,6 +8,7 @@ import { TextComponentComponent } from './text-component/text-component.componen
 import { ImagecomponentComponent } from './imagecomponent/imagecomponent.component';
 import { EmpinfoComponent } from './empinfo/empinfo.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { EInfoComponent } from './e-info/e-info.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormComponentComponent } from './form-component/form-component.componen
     TextComponentComponent,
     ImagecomponentComponent,
     EmpinfoComponent,
-    FormComponentComponent
+    FormComponentComponent,
+    EInfoComponent
   ],
   imports: [
     BrowserModule,
